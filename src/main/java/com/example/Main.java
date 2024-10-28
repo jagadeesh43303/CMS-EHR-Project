@@ -1,15 +1,12 @@
 package com.example;
 
-import java.io.IOException;
-
 public class Main {
     public static void main(String[] args) {
-        try {
-            MeaningfulUseFetcher fetcher = new MeaningfulUseFetcher();
-            MeaningfulUseAnalyzer analyzer = new MeaningfulUseAnalyzer(fetcher);
-            analyzer.analyzeData();
-        } catch (IOException e) {
-            System.err.println("Error fetching data: " + e.getMessage());
-        }
+        MeaningfulUseFetcher fetcher = new MeaningfulUseFetcher();
+        MeaningfulUseAnalyzer analyzer = new MeaningfulUseAnalyzer(fetcher);
+        
+        // Call analyzeData for the year 2014
+        int year = 2014;
+        analyzer.analyzeData(year);
     }
 }

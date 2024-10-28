@@ -1,4 +1,5 @@
 com\example\Main.class
 com\example\MeaningfulUseFetcher.class
+com\example\DataRecord.class
 com\example\App.class
 com\example\MeaningfulUseAnalyzer.class
